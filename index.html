@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ニコナレ→バーチャルキャスト用config.json変換くん（非公式）</title>
+    <meta property="og:title" content="ニコナレ→バーチャルキャスト用config.json変換くん（非公式）" />
+    <meta name="twitter:title" content="ニコナレ→バーチャルキャスト用config.json変換くん（非公式）" />
+    <meta name="description" content="ニコナレのスライドをバーチャルキャストに貼り付けるのをサポートするための非公式ツールだよ">
+    <meta property="og:description" content="ニコナレのスライドをバーチャルキャストに貼り付けるのをサポートするための非公式ツールだよ">
+    <meta name="twitter:description" content="ニコナレのスライドをバーチャルキャストに貼り付けるのをサポートするための非公式ツールだよ">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="http://narecast.rutan.info/ogp.png" />
+    <meta name="twitter:image" content="http://narecast.rutan.info/ogp.png" />
+    <link rel="stylesheet" href="./node_modules/ress/ress.css">
+    <link rel="stylesheet" href="./style.scss">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>ニコナレ→バーチャルキャスト用config.json変換くん（非公式）</h1>
+            <p>
+                <a href="https://niconare.nicovideo.jp/">ニコナレ</a>のスライドID（例: kn800 ）を入力すると、<br>
+                <a href="https://virtualcast.jp/">バーチャルキャスト</a>のホワイトボード機能で使うためのconfig.jsonに変換してくれるすごいやつだよ。<br>
+                （ホワイトボードの部分しかつくらないので、いい感じに合成してね）
+            </p>
+        </header>
+        <form class="main">
+            <input class="input-area" type="text" placeholder="例) kn800">
+            <button type="submit">↓ 変換 ↓</button>
+            <textarea class="output-area"></textarea>
+        </form>
+        <footer class="footer">
+            つくったひと: <a href="https://twitter.com/ru_shalm">@ru_shalm</a><br>
+            <span class="sorry">ぼくはバーチャルキャストに対応した家を持ってないので動作確認してないです＞＜；</span>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
